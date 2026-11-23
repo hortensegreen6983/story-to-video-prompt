@@ -1,0 +1,210 @@
+{
+  "title": "雨衣 · The Raincoat",
+  "logline": "凌晨三点的便利店，店员从监控里看见一个雨衣顾客站了很久；等他走到货架尽头，人不见了，货架上只剩一件还在滴水的雨衣。",
+  "poster_frame": "S04 — the dripping raincoat hanging on an empty shelf hook, the clerk's hand frozen an inch from the sleeve, cold fridge light raking across the wet PVC.",
+  "aspect_ratio": "2.39:1",
+  "fps": 24,
+  "style": {
+    "look": "photoreal night interior, documentary stillness, no stylization",
+    "palette": "cold fluorescent white and pale green; one warm red price tag is the only warm accent in frame",
+    "grade": "flat contrast, crushed blacks down the aisles, no teal-orange, no film emulation LUT",
+    "texture": "wet linoleum with tracked-in footprints, condensation on fridge glass, dust on every horizontal surface",
+    "optics": "shot on a full-frame sensor through anamorphic glass at T2, 1/48s shutter, elliptical bokeh, mild chromatic fringing at the frame edges, halation blooming off the fluorescent tubes, highlight rolloff instead of clipped white, no sharpening halos, no CGI sheen"
+  },
+  "audio": {
+    "music": "none",
+    "ambience": "fluorescent ballast hum, fridge compressor cycling, rain on the glass front"
+  },
+  "characters": [
+    {
+      "id": "CHAR_A",
+      "name": "夜班店员",
+      "anchor": "a 22-year-old male night clerk, 178cm, tired narrow eyes with dark under-circles, black hair flattened by a blue uniform cap, faint stubble on the jaw, a small split on the right knuckle, blue convenience-store polo two sizes too big, sleeves rolled once, name tag worn askew, black trousers, gray sneakers"
+    },
+    {
+      "id": "CHAR_B",
+      "name": "雨衣顾客",
+      "anchor": "an adult figure in a dark green PVC raincoat, hood up, face entirely in shadow under the brim, sleeves too long covering the hands, water beading and running off the PVC, no visible skin, height 172cm"
+    },
+    {
+      "id": "PROP_RAINCOAT",
+      "name": "滴水雨衣",
+      "anchor": "a dark green PVC raincoat, hood up and empty as a shell, still beaded all over with water, sleeves hanging straight down, one shoulder seam gone pale with wear"
+    }
+  ],
+  "locations": [
+    {
+      "id": "LOC_STORE",
+      "name": "便利店前场",
+      "anchor": "a 24-hour convenience store at 3 a.m., 4-meter white tile floor, laminate checkout counter with a worn crescent, hot-snack case, cigarette rack behind the register, one hanging red price tag, fluorescent tube fixtures in a grid, automatic glass door with rain streaking down it"
+    },
+    {
+      "id": "LOC_AISLE",
+      "name": "货架通道",
+      "anchor": "a narrow aisle of waist-high shelves, refrigerated display along the back wall with fogged glass doors, instant-noodle pallet at the aisle mouth, wire shelf hooks, peeling price labels, wet footprints tracking down the tile"
+    }
+  ],
+  "negatives": [
+    "on-screen text",
+    "subtitles",
+    "watermark",
+    "logo",
+    "extra fingers",
+    "deformed hands",
+    "morphing faces",
+    "duplicate limbs",
+    "warped shelving",
+    "rubber-looking skin",
+    "floating objects",
+    "cartoon shading"
+  ],
+  "shots": [
+    {
+      "id": "S01",
+      "duration": 7,
+      "beat": "他擦着柜台，眼睛却黏在监控小屏上",
+      "size": "MEDIUM SHOT",
+      "subject": "{{CHAR_A}}",
+      "action": [
+        "wipes the counter in slow circles with a gray rag, eyes fixed off-frame on the monitor",
+        "his hand slows, then stops mid-circle"
+      ],
+      "wardrobe": "blue polo with a frayed collar thread standing up, name tag hanging at 15 degrees, rag gray and thinning at the fold",
+      "setting": "{{LOC_STORE}}",
+      "atmosphere": "fluorescent light flickering once on the left fixture; rain sliding down the glass door behind him",
+      "physics": "the rag dragging, wet laminate squeaking under it; his shoulders pulled slightly toward the screen",
+      "lighting": "flat cold tubes straight down from the ceiling grid, hard shadow under the cap brim, a second weak reflection of the tubes on the wet counter, the aisles behind him falling to black",
+      "camera": "holds a slow 6% push-in, drifting half a degree left, ending when his hand stops",
+      "lens": "40mm anamorphic at T2.8, focus on his eyes, the glass door soft behind",
+      "timeline": [
+        "0.0–1.8s | he wipes the counter in slow circles, breathing through his mouth, eyes already off-frame toward the monitor",
+        "1.8–4.2s | the circles shorten; he leans his weight onto the rag hand, jaw tightening",
+        "4.2–5.6s | the hand stops mid-circle, rag still pressed flat against the laminate",
+        "5.6–7.0s | he lifts his chin toward the monitor, one blink, breath held"
+      ],
+      "micro": [
+        "the laminate counter worn matte in a crescent where elbows rest, edges polished by years of forearms",
+        "the rag leaves a wet arc that starts drying from its edges inward while he is still wiping",
+        "dried ramen broth stuck to the hot-snack case, browned and cracked at the rim",
+        "the frayed collar thread standing up and trembling with his breath",
+        "a split on his right knuckle, shiny and tight, catching one hard highlight",
+        "price-gun ink smudge across his thumbnail, half washed off",
+        "a fly strip curling above the register, its surface dull with age"
+      ],
+      "continuity": "same clerk, same polo, same counter geometry as every later shot; the red price tag stays frame-right in the background",
+      "sound": ["fluorescent ballast hum", "rag squeaking on wet laminate", "rain on the glass front", "fridge compressor kicking on"],
+      "transition": "cut"
+    },
+    {
+      "id": "S02",
+      "duration": 6,
+      "beat": "监控屏里，雨衣人一动不动地站在货架前",
+      "size": "EXTREME CLOSE-UP",
+      "subject": "a 7-inch security monitor mounted above the register, its grainy feed showing {{CHAR_B}} standing motionless at the aisle end",
+      "action": [
+        "the grainy feed shows the raincoat figure standing motionless at the end of the aisle",
+        "a single scanline rolls up the screen"
+      ],
+      "setting": "{{LOC_STORE}}, monitor bezel scratched, dead pixel column on the left edge",
+      "atmosphere": "screen backlight bleeding into the dark around the bezel; dust on the glass catching it",
+      "physics": "the feed's low frame rate making the figure's stillness read as a held image; droplets falling in the feed at a stutter",
+      "lighting": "the monitor is the only source in frame: cold blue-white spill onto the bezel, everything else near black, the clerk's shoulder a dark shape at the frame edge",
+      "camera": "locked off, no movement, then a 3% push-in on the last second",
+      "lens": "100mm macro at T4, screen pixels just resolving, bezel falling out of focus",
+      "timeline": [
+        "0.0–2.0s | the feed holds: raincoat figure at the aisle end, hood up, water dripping from the hem",
+        "2.0–3.6s | one scanline rolls top to bottom; the figure does not move a pixel",
+        "3.6–5.0s | the timestamp digits tick over in the corner, white on black, slightly blooming",
+        "5.0–6.0s | a slow 3% push-in; the figure's shadow pool on the wet tile is the only thing that changes"
+      ],
+      "micro": [
+        "monitor bezel scratched in short parallel strokes, one deep gouge catching the backlight",
+        "a dead pixel column running down the left edge, permanently dark",
+        "visible scanlines and sensor grain in the feed, worse in the shadows",
+        "the raincoat figure rendered at low resolution, edges smeared by compression",
+        "droplets falling from the hem in the feed, each one a two-frame smear",
+        "dust settled on the screen glass, lit from behind, brighter than the image",
+        "timestamp digits in the corner, white on black, overexposed at the stroke centers"
+      ],
+      "continuity": "the monitor geometry and the aisle in the feed match S03's real aisle exactly: same shelf heights, same red tag position",
+      "sound": ["monitor coil whine", "fridge compressor", "rain, muffled", "the clerk's breath close to the mic"],
+      "transition": "cut"
+    },
+    {
+      "id": "S03",
+      "duration": 8,
+      "beat": "他走进通道，尽头是空的",
+      "size": "MEDIUM WIDE SHOT",
+      "subject": "{{CHAR_A}}",
+      "action": [
+        "walks down the aisle toward the refrigerated wall, head turning slightly left and right",
+        "stops at the aisle end and looks at the empty floor"
+      ],
+      "wardrobe": "polo untucked at the back, cap pushed up with one hand, gray sneakers squeaking on wet tile",
+      "setting": "{{LOC_AISLE}}",
+      "atmosphere": "cold air from the open fridge door pushing a faint fog across the floor; one tube flickering at the aisle mouth",
+      "physics": "his weight landing unevenly, the wet floor grabbing each sole; shelf hooks swaying after he passes",
+      "lighting": "fridge light from the back wall as the key, cold and green-white, his body a silhouette with a rim along the shoulder; ceiling tubes as flat fill from above; the aisle mouth behind him falling into darkness",
+      "camera": "follows him from behind at a walking pace, then stops as he stops, holding the empty end of the aisle",
+      "lens": "32mm anamorphic at T2, deep enough to read the whole aisle, the fridge glass blooming",
+      "timeline": [
+        "0.0–2.2s | he steps into the aisle, one hand still holding the rag, head turning left",
+        "2.2–4.4s | he walks; the camera follows at his pace, shelf hooks swaying as he passes",
+        "4.4–6.2s | he slows, then stops; his reflection slides across the fogged fridge glass and vanishes",
+        "6.2–8.0s | he stands at the empty aisle end, breathing, looking down at the wet floor where somebody should be"
+      ],
+      "micro": [
+        "floor tiles scuffed in a dark trail from a pallet jack, one tile cracked corner to corner",
+        "condensation on the fridge doors, one clean drip track cut through the fog",
+        "hanging price tags still swaying from his passing, strings twisted",
+        "his dim reflection sliding across the fridge glass, lagging half a step behind him",
+        "a pallet of instant noodles at the aisle mouth, shrink-wrap torn at the corner, cardboard furred with moisture",
+        "a gray wad of chewing gum fused to the tile, flattened by a hundred shoes",
+        "cold air spilling from the open fridge door, moving the loose hem of his polo"
+      ],
+      "continuity": "same aisle geography as the S02 monitor feed: same shelf heights, same red tag frame-right, same fridge wall at the end",
+      "sound": ["sneakers squeaking wet tile", "fridge compressor", "a shelf hook ticking as it settles", "his breath, uneven", "rain on the roof, distant"],
+      "dialogue": "有人吗？",
+      "dialogue_lang": "Mandarin",
+      "speaker": "CHAR_A",
+      "adverb": "almost whispered",
+      "transition": "cut"
+    },
+    {
+      "id": "S04",
+      "duration": 7,
+      "beat": "货架钩上挂着一件滴水雨衣，他的手停在半寸之外",
+      "size": "CLOSE-UP",
+      "subject": "the right hand and forearm of {{CHAR_A}}",
+      "action": [
+        "the raincoat hangs from the hook and drips onto the tile",
+        "his fingertips stop an inch from the sleeve, trembling"
+      ],
+      "wardrobe": "his sleeve rolled once, forearm hair wet, the knuckle split reopened and beading",
+      "setting": "{{LOC_AISLE}}, with {{PROP_RAINCOAT}} hanging from a bare wire hook at eye height, a peeling price label reading 4.5 on the shelf lip below",
+      "atmosphere": "cold air from the fridge door moving the raincoat hem a few millimeters; a drip line on the tile leading back three meters",
+      "physics": "the PVC heavy with water, its weight pulling the hook slightly down; each drip landing with a small spread on the tile",
+      "lighting": "fridge light raking from the right through the fogged glass, throwing a wet sheen down the raincoat's folds; hard shadow of the hook on the shelf behind; his hand lit only at the fingertips",
+      "camera": "his hand enters frame from the left; locked off, then a 4% push toward the sleeve on the last two seconds",
+      "lens": "75mm at T2, the raincoat sharp, the aisle dissolving behind it",
+      "timeline": [
+        "0.0–1.6s | the raincoat hangs, one drop gathering at the hem and falling",
+        "1.6–3.4s | his hand enters from the left, slow, fingers spread, stopping short of the sleeve",
+        "3.4–5.2s | the hem shifts a few millimeters in the cold air; his fingers tremble, not touching",
+        "5.2–7.0s | a 4% push toward the wet PVC; the drip line on the floor leads back out of frame"
+      ],
+      "micro": [
+        "PVC still beaded all over, water running down the folds in thin branching threads",
+        "the raincoat's shoulder seam gone pale where it has been worn, one stitch pulled",
+        "the wire hook straightened slightly under the weight, its paint chipped to bare metal",
+        "a drip line on the tile leading back three meters, individual drops spaced unevenly",
+        "the price label peeling at one corner, '4.5' faded to gray",
+        "his fingertips pale and pruned from the wet rag, tremor visible at the nail edge",
+        "the split knuckle reopened, a bead of blood thinned by water"
+      ],
+      "continuity": "same aisle end as S03, now occupied; the raincoat is the only object that moved between shots",
+      "sound": ["a single drip hitting tile, then another", "fridge compressor", "his breath catching", "rain on the roof"],
+      "transition": "cut to black"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# 忽略
+__pycache__/
+*.py[cod]
+*.skill
+dist/
+build/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+pack.md
+!examples/sample-output.md

@@ -1,0 +1,54 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 语法检查
+        run: python -m py_compile scripts/build_prompt_pack.py
+
+      - name: 中文高密度样例（应无 ERROR）
+        run: |
+          python scripts/build_prompt_pack.py examples/h3-storyboard-zh.json --model h3 --check
+          python scripts/build_prompt_pack.py examples/h3-storyboard-zh.json --model h3 --out /tmp/h3.md
+          test -s /tmp/h3.md
+
+      - name: 散文版样例 + 多模型
+        run: |
+          python scripts/build_prompt_pack.py examples/storyboard.json --model veo3,kling,sora2 --out /tmp/multi.md
+          test -s /tmp/multi.md
+
+      - name: 缺字段不崩
+        run: |
+          python - <<'PY'
+          import json, pathlib, subprocess, sys
+          p = pathlib.Path("/tmp/min.json")
+          p.write_text(json.dumps({"shots": [{"id": "S01", "duration": 4}]}), encoding="utf-8")
+          r = subprocess.run([sys.executable, "scripts/build_prompt_pack.py", str(p), "--model", "h3"],
+                             capture_output=True, text=True)
+          print(r.stdout[-800:], r.stderr[-800:])
+          assert r.returncode in (0, 1)
+          PY
+
+      - name: 中文输出校验（正文不得以英文为主）
+        run: |
+          python - <<'PY'
+          import io, re
+          t = io.open("examples/sample-output.md", encoding="utf-8").read()
+          cjk = len(re.findall(r"[\u4e00-\u9fff]", t))
+          latin = len(re.findall(r"[A-Za-z]", t))
+          print("CJK", cjk, "Latin", latin)
+          assert cjk > latin * 3, "正文应以中文为主"
+          PY

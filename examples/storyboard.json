@@ -1,0 +1,102 @@
+{
+  "title": "最后一卷",
+  "logline": "师父死后，学徒在暗房里冲洗他留下的最后一卷胶片，里面全是陌生人的脸。",
+  "poster_frame": "他坐在一地的陌生人照片中间，红光只照亮半张脸。",
+  "aspect_ratio": "2.39:1",
+  "fps": 24,
+  "style": {
+    "look": "35mm Kodak Vision3 500T, fine grain, halation blooming on highlights",
+    "palette": "muted cyan shadows against red safelight",
+    "grade": "low contrast, milky blacks",
+    "texture": "subtle gate weave"
+  },
+  "audio": { "music": "no music", "ambience": "ventilation hum" },
+  "characters": [
+    {
+      "id": "CHAR_A",
+      "name": "学徒",
+      "anchor": "an 18-year-old apprentice, buzz-cut hair, faded navy canvas apron over a grey tee, dark freckles across the nose, dust on his knuckles"
+    }
+  ],
+  "locations": [
+    {
+      "id": "LOC_DARKROOM",
+      "name": "暗房",
+      "anchor": "a cramped 1980s photo studio darkroom, stained enamel developing trays, strings of drying prints overhead, one red safelight above the door"
+    }
+  ],
+  "negatives": [
+    "on-screen text",
+    "watermark",
+    "extra fingers",
+    "morphing faces",
+    "duplicate limbs"
+  ],
+  "shots": [
+    {
+      "id": "S01",
+      "duration": 6,
+      "beat": "他把最后一卷胶片举到红光下，像怕它碎掉",
+      "size": "MEDIUM CLOSE-UP",
+      "subject": "{{CHAR_A}}",
+      "action": [
+        "holds a small brass film canister up to the red safelight with both hands, as if it might break",
+        "blinks once, too slowly"
+      ],
+      "setting": "{{LOC_DARKROOM}}",
+      "atmosphere": "faint chemical haze in the air",
+      "lighting": "hard red key from screen-left rims his cheekbone and one eye, everything else in soft shadow, a bead of sweat catching the light at his temple",
+      "camera": "performs a very slow 8% push-in over the full 6 seconds",
+      "lens": "50mm at T2, shallow depth so the doorway melts into red bokeh",
+      "sound": ["ventilation fan hum", "a single drip into a tray"],
+      "dialogue": "师父，这卷……还没拍完。",
+      "dialogue_lang": "Mandarin",
+      "speaker": "CHAR_A",
+      "adverb": "barely audible",
+      "transition": "cut"
+    },
+    {
+      "id": "S02",
+      "duration": 4,
+      "beat": "两个拇指撬开罐盖",
+      "size": "EXTREME CLOSE-UP",
+      "subject": "two thumbs prying the brass lid off a film canister, the metal edge nicked and green with age, dust falling from the seam",
+      "action": ["the lid gives with a dry click"],
+      "setting": "{{LOC_DARKROOM}}",
+      "lighting": "hard red safelight from screen-left, dark shadows in the knuckle creases, the rest of the frame near black",
+      "camera": "static locked-off on a tripod, no camera movement",
+      "lens": "100mm macro at T4, razor-thin depth of field",
+      "sound": ["metal creaking", "one dry click"],
+      "transition": "cut"
+    },
+    {
+      "id": "S03",
+      "duration": 5,
+      "beat": "他举起一张照片，上面是陌生人的脸",
+      "size": "MEDIUM SHOT",
+      "subject": "{{CHAR_A}}",
+      "action": ["lifts one wet print by its corner from a wire", "holds it still while the paper trembles"],
+      "setting": "{{LOC_DARKROOM}}",
+      "lighting": "red safelight above and behind him, his face a half-lit silhouette, the print catching the light",
+      "camera": "trucks right one slow step, ending with the print centered and the boy at the edge of frame",
+      "lens": "50mm at T2.8",
+      "sound": ["paper fibers creaking", "ventilation hum"],
+      "transition": "cut"
+    },
+    {
+      "id": "S04",
+      "duration": 6,
+      "beat": "他坐在一地陌生人的脸中间",
+      "size": "WIDE SHOT",
+      "subject": "{{CHAR_A}}",
+      "action": ["sits on an upturned crate in the middle of the floor, head down, apron bunched at his waist"],
+      "setting": "{{LOC_DARKROOM}}",
+      "atmosphere": "a dozen wet prints of strangers spread around his feet",
+      "lighting": "red light from screen-left, the corners of the room falling to black",
+      "camera": "dollies back slowly through the doorway, ending with the red rectangle of the door framing him",
+      "lens": "35mm at T2.8, deep enough that the trays read",
+      "sound": ["ventilation fan", "a refrigerator starting up"],
+      "transition": "fade to black"
+    }
+  ]
+}
