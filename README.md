@@ -54,13 +54,13 @@ S01 | 7s | 中景 | 2.39:1 | 24 fps
 
 ```bash
 # macOS / Linux
-git clone https://github.com/<your-name>/story-to-video-prompt.git \
+git clone https://github.com/hortensegreen6983/story-to-video-prompt.git \
   ~/.agents/skills/story-to-video-prompt
 ```
 
 ```powershell
 # Windows
-git clone https://github.com/<your-name>/story-to-video-prompt.git `
+git clone https://github.com/hortensegreen6983/story-to-video-prompt.git `
   "$env:USERPROFILE\.agents\skills\story-to-video-prompt"
 ```
 
@@ -189,7 +189,7 @@ python scripts/build_prompt_pack.py examples/h3-storyboard-zh.json --check
 Turns a plot or a one-line scene into a production-ready video prompt pack: story spine, entity lock bible, shot list, per-shot prompts, single-pass prompt, negatives and parameters. Chinese output by default; two densities — prose for hosted models (Veo / Sora / Kling / Seedance / Hailuo / Runway) and a 12-block, timecoded, hyper-detailed format for local long-context models such as MiniMax H3.
 
 ```bash
-git clone https://github.com/<your-name>/story-to-video-prompt.git ~/.agents/skills/story-to-video-prompt
+git clone https://github.com/hortensegreen6983/story-to-video-prompt.git ~/.agents/skills/story-to-video-prompt
 python scripts/build_prompt_pack.py examples/h3-storyboard-zh.json --model h3 --out pack.md
 ```
 
